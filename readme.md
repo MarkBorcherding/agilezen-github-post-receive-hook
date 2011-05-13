@@ -26,7 +26,7 @@ https://wherever.com/?project_id=123&api_key=12342k3j4b287zs9d8vzsv9
 
 Push commits to your Github repo with commit message that contains `/(?:task|story|card) #?(\d+)/i` and you'll see the commit appear in AgileZen.
 
-[[https://github.com/MarkBorcherding/agilezen-github-post-receive-hook/wiki/screenshot.png]]
+[[wiki/screenshot.png]]
 
 To Do
 -----
