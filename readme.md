@@ -1,3 +1,40 @@
-# A Github Post-Receive Hook for AgileZen
+A Github Post-Receive Hook for AgileZen
+=======================================
+
+This is a super simple little Sinatra app to attach comments to an AgileZen board. Right now 
+it will only look for comments on a single board.
+
+Requirements
+------------
+
+* Ruby
+* Sinatra 
+
+You can easily spin up this app on Heroku. 
+
+Usage
+-----
+
+Get your API key from AgileZen. It's probably a good idea to create user specifically for
+the API and limit the privileges as needed.
+
+Add the post receive hook in Github as follows.
+
+```
+https://wherever.com/?project_id=123&api_key=12342k3j4b287zs9d8vzsv9
+```
+
+Push to your Github repo and you'll see the commit appear in AgileZen.
+
+<img>
+
+
+To Do
+-----
+Get the API key out of the query string. I don't really know a better way to do it right now.
+
+
+
+
 
 
