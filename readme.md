@@ -24,7 +24,7 @@ Add the post receive hook in Github as follows.
 https://wherever.com/?project_id=123&api_key=12342k3j4b287zs9d8vzsv9
 ```
 
-Push to your Github repo and you'll see the commit appear in AgileZen.
+Push commits to your Github repo with commit message that contains `/(?:task|story|card) #?(\d+)/i` and you'll see the commit appear in AgileZen.
 
 <img>
 
