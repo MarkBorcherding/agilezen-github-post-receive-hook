@@ -16,11 +16,12 @@ post "/" do
   http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
   headers ={'X-Zen-ApiKey' => params[:api_key], 'Content-Type' => 'application/json'  }
-
   task_id_regex = /(?:story|card|task) #?(\d+)/i
+  push = JSON.parse(params[:payload])
 
-  push = JSON.parse(params[:payload])['commits']
-  commits_with_task = push.select{|commit| task_id_regex.match(commit['message'])}
+  return if push['base_ref']
+
+  commits_with_task = push['commits'].select{|commit| task_id_regex.match(commit['message'])}
   commits_with_task.each do |commit|
     data = "{\"text\":\"#{comment_message_from commit }\"}"
     commit['message'].scan(task_id_regex).each do |story_id|
