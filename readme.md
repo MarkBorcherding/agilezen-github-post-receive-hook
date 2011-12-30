@@ -31,7 +31,7 @@ Push commits to your Github repo with commit message that contains `/(?:task|sto
 To Do
 -----
 * Get the API key out of the query string. I don't really know a better way to do it right now.
-* Check for the precence of the story before trying to add the comment, instead of letting it fail if it doesn't exist
+* Check for the presence of the story before trying to add the comment, instead of letting it fail if it doesn't exist
 
 
 
