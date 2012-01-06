@@ -39,5 +39,5 @@ end
 
 def comment_message_from(commit)
   commit_message = commit['message'].slice(0,commit['message'].index("\n") || 50 )
-  "#{commit['author']['name']} commited [<a href='#{commit['url']}'>#{commit['id'].slice(0,7)}</a>] #{commit_message}"
+  "#{commit['author']['name']} commited [[#{commit['id'].slice(0,7)}](#{commit['url']})] #{commit_message}"
 end
