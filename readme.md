@@ -1,19 +1,23 @@
-A Github Post-Receive Hook for AgileZen
-=======================================
+# Now Native 
+
+AgileZen now as this as a native ability in Github. [Read more](http://blog.agilezen.com/2012/01/10/github-integration/) at their blog. Don't expect anything new here.  
+
+# A Github Post-Receive Hook for AgileZen
+
 
 This is a super simple little Sinatra app to attach comments to an AgileZen board. Right now 
 it will only look for comments on a single board.
 
-Requirements
-------------
+## Requirements
+
 
 * Ruby
 * Sinatra 
 
 You can easily spin up this app on Heroku. 
 
-Usage
------
+## Usage
+
 
 Get your API key from AgileZen. It's probably a good idea to create user specifically for
 the API and limit the privileges as needed.
@@ -28,10 +32,9 @@ Push commits to your Github repo with commit message that contains `/(?:task|sto
 
 <img src='https://github.com/MarkBorcherding/agilezen-github-post-receive-hook/wiki/screenshot.png'/>
 
-To Do
------
-* Get the API key out of the query string. I don't really know a better way to do it right now.
-* Check for the presence of the story before trying to add the comment, instead of letting it fail if it doesn't exist
+# To Do
+* Nothing.....now that it's native. 
+
 
 
 
